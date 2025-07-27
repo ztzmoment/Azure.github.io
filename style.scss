@@ -754,14 +754,22 @@ footer {
 
 /* 标签样式 */
 
-ul.tag li a {
-  background: #e3eafc;
-  color: #4f8cff;
-  border-radius: 4px;
-  padding: 2px 8px;
+ul.tag {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+ul.tag li {
+  display: inline;
   margin-right: 6px;
+}
+ul.tag li a {
+  background: #f2f6fa;
+  color: #4f8cff;
+  border-radius: 3px;
+  padding: 2px 8px;
   font-size: 13px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 ul.tag li a:hover {
   background: #4f8cff;
@@ -777,26 +785,32 @@ a, .post, .profile-card, nav {
 /* 美化导航栏和页脚 */
 nav {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  padding: 12px 0;
+  border-bottom: 1px solid #ececec;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0 0 0 0;
   margin-bottom: 32px;
+  text-align: center;
 }
 nav a {
-  padding: 8px 18px;
-  border-radius: 6px;
-  transition: background 0.2s;
+  display: inline-block;
+  padding: 12px 18px;
+  color: #222;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
 }
 nav a:hover {
-  background: #f0f4fa;
-  color: #1a73e8;
+  background: #f2f6fa;
+  color: #4f8cff;
 }
 footer {
-  background: $footer-background-color;
-  color: #fff;
-  border-top: 1px solid $footer-border-color;
-  padding: 32px 0 16px 0;
+  background: #fff;
+  color: #888;
+  border-top: 1px solid #ececec;
+  padding: 24px 0 16px 0;
   font-size: 15px;
+  text-align: center;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
