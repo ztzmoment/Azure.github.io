@@ -818,4 +818,71 @@ footer {
 @import "highlights";
 //@import "gitalk";
 
+.posts {
+  margin: 0 auto;
+  max-width: 700px;   /* 与内容区宽度一致 */
+  padding: 0 16px;
+  display: block;     /* 保持单列 */
+}
+
+.posts > .post {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #ececec;
+  margin-bottom: 32px;
+  padding: 32px 32px 24px 32px;
+  transition: box-shadow 0.18s, border-color 0.18s;
+}
+
+.posts > .post:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  border-color: #d0e2ff;
+  background: #f9fbff;
+}
+
+.posts h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.posts h1 a {
+  color: #222;
+  transition: color 0.2s;
+}
+
+.posts h1 a:hover {
+  color: #4f8cff;
+  text-decoration: underline;
+}
+
+.posts .meta {
+  font-size: 0.97em;
+  color: #888;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.posts .entry {
+  color: #444;
+  font-size: 1.07em;
+  margin-bottom: 10px;
+}
+
+.posts .read-more {
+  font-size: 1em;
+  color: #4f8cff;
+  font-weight: 500;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  float: right;
+}
+
 
