@@ -1,15 +1,15 @@
 name: "Azure's blog"
 description: "个人技术博客"
 
-avatar: https://pianfan.github.io/images/about-image.png
-favicon: https://pianfan.github.io/images/favicon.ico
+avatar: https://ztzmoment.github.io/images/about-image.png
+favicon: https://ztzmoment.github.io/images/favicon.ico
 
 navigation:
-  - name: 首页
+  - name: Home
     url: /
-  - name: 关于
+  - name: About
     url: /about
-  - name: 分类
+  - name: Tags 
     url: /tags
 
 paginate: 8
