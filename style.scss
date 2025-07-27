@@ -820,19 +820,21 @@ footer {
 
 .posts {
   margin: 0 auto;
-  max-width: 700px;   /* 与内容区宽度一致 */
+  max-width: 700px;   /* 内容区最大宽度 */
   padding: 0 16px;
-  display: block;     /* 保持单列 */
+  display: block;
 }
 
 .posts > .post {
+  width: 100%;                /* 拉满内容区 */
   background: #fff;
   border-radius: 8px;
   box-shadow: none;
   border: 1px solid #ececec;
   margin-bottom: 32px;
-  padding: 32px 32px 24px 32px;
+  padding: 28px 24px 20px 24px;  /* 上下大，左右适中 */
   transition: box-shadow 0.18s, border-color 0.18s;
+  box-sizing: border-box;     /* 防止padding撑大宽度 */
 }
 
 .posts > .post:hover {
