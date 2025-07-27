@@ -23,6 +23,7 @@ body {
   font-family: $base-font;
   color: $base-color;
   line-height: 1.7em;
+  background: $background-color;
 }
 
 .container {
@@ -469,7 +470,37 @@ nav {
     }
   }
 }
+/* 美化文章列表 */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.posts > .post {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+  width: 340px;
+  margin-bottom: 32px;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.posts > .post:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+  transform: translateY(-4px) scale(1.02);
+}
+.posts .read-more {
+  margin-top: 16px;
+  align-self: flex-end;
+  color: #4f8cff;
+  font-weight: bold;
+}
 
+/* 美化文章列表结束 */
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
@@ -719,6 +750,53 @@ footer {
       left: 0;
     }
   }
+}
+
+/* 标签样式 */
+
+ul.tag li a {
+  background: #e3eafc;
+  color: #4f8cff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-right: 6px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+ul.tag li a:hover {
+  background: #4f8cff;
+  color: #fff;
+}
+
+/* 鼠标悬停过渡效果 */
+a, .post, .profile-card, nav {
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+
+/* 美化导航栏和页脚 */
+nav {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 12px 0;
+  margin-bottom: 32px;
+}
+nav a {
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: #f0f4fa;
+  color: #1a73e8;
+}
+footer {
+  background: $footer-background-color;
+  color: #fff;
+  border-top: 1px solid $footer-border-color;
+  padding: 32px 0 16px 0;
+  font-size: 15px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
