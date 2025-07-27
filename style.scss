@@ -320,7 +320,7 @@ img {
 //
 
 .wrapper-sidebar {
-  width: 10%;
+  width: 30%;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: $background-color;
@@ -430,11 +430,13 @@ nav {
 
 .wrapper-content {
   float: right;
-  width: 90%;
+  width: 70%;
+  padding: 0; /* 如有多余内边距可去掉 */
 
   @include mobile {
     float: none;
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -819,10 +821,12 @@ footer {
 //@import "gitalk";
 
 .posts {
-  margin: 0 auto;
-  max-width: 100%;   /* 让内容列表宽度和内容区一致 */
-  padding: 0 32px;   /* 适当内边距，防止贴边 */
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 32px; /* 适当内边距，防止内容贴边 */
   display: block;
+  box-sizing: border-box;
 }
 
 .posts > .post {
