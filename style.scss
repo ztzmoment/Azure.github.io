@@ -820,11 +820,12 @@ footer {
 @import "highlights";
 //@import "gitalk";
 
+// 修改文章列表容器样式
 .posts {
   width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 0 32px; /* 适当内边距，防止内容贴边 */
+  max-width: 800px;  // 限制最大宽度，使内容稍微窄一些
+  margin: 0 auto;    // 居中显示
+  padding: 0 24px;   // 减少左右内边距
   display: block;
   box-sizing: border-box;
 }
@@ -834,11 +835,12 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   border: none;
-  margin-bottom: 32px;
-  padding: 32px 32px 24px 32px;
+  margin-bottom: 24px;  // 减少底部间距，让列表更紧凑
+  padding: 24px 28px 20px 28px;  // 调整内边距
   box-sizing: border-box;
   transition: box-shadow 0.18s, border-color 0.18s;
-  width: 100%; /* 确保它填满父容器 */
+  width: 100%;
+  min-height: 200px;  // 设置最小高度，使文章卡片更长
 }
 
 .posts > .post:last-child {
@@ -846,9 +848,10 @@ footer {
 }
 
 .posts h1 {
-  font-size: 1.5em;
+  font-size: 1.4em;  // 稍微调小标题字体
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
 }
 
 .posts h1 a {
@@ -862,9 +865,9 @@ footer {
 }
 
 .posts .meta {
-  font-size: 0.97em;
+  font-size: 0.9em;
   color: #888;
-  margin-bottom: 10px;
+  margin-bottom: 16px;  // 增加底部间距
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -873,18 +876,27 @@ footer {
 
 .posts .entry {
   color: #444;
-  font-size: 1.07em;
-  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;  // 增加内容与底部的间距
+  min-height: 80px;     // 确保内容区域有足够高度
 }
 
 .posts .read-more {
-  font-size: 1em;
+  font-size: 0.95em;
   color: #4f8cff;
   font-weight: 500;
-  padding: 0;
-  background: none;
-  border: none;
-  box-shadow: none;
+  padding: 8px 16px;    // 给按钮添加一些内边距
+  background: #f8f9fa;  // 添加背景色
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
   margin: 0;
   float: right;
+  transition: all 0.2s;
+}
+
+.posts .read-more:hover {
+  background: #4f8cff;
+  color: #fff;
+  border-color: #4f8cff;
 }
