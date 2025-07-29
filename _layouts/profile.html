@@ -1,24 +1,19 @@
 ---
 layout: default
 ---
-
 <div class="profile-container">
-  <!-- 左侧个人资料区域 -->
   <div class="profile-sidebar">
     <div class="profile-card">
       <div class="profile-avatar">
         <img src="/images/about-image.png" alt="Azure" class="avatar-image">
       </div>
-      
       <div class="profile-info">
         <h1 class="profile-name">Azure</h1>
         <p class="profile-title">人工智能专业学生</p>
-        
         <div class="profile-location">
           <i class="fas fa-map-marker-alt"></i>
           <span>中国</span>
         </div>
-        
         <div class="profile-links">
           <a href="mailto:zhutianzeazure@gmail.com" class="profile-link">
             <i class="fas fa-envelope"></i>
@@ -36,27 +31,12 @@ layout: default
       </div>
     </div>
   </div>
-
-  <!-- 右侧主要内容区域 -->
   <div class="profile-main">
-    <!-- 导航栏 -->
-    <nav class="profile-nav">
-      <a href="/" class="nav-link">首页</a>
-      <a href="/about" class="nav-link active">关于我</a>
-      <a href="/news" class="nav-link">新闻</a>
-      <a href="/publications" class="nav-link">发表论文</a>
-      <a href="/honors" class="nav-link">荣誉奖项</a>
-      <a href="/education" class="nav-link">教育经历</a>
-      <a href="/projects" class="nav-link">项目经历</a>
-    </nav>
-
-    <!-- 内容区域 -->
     <div class="profile-content">
       {{ content }}
     </div>
   </div>
 </div>
-
 <style>
 .profile-container {
   display: flex;
@@ -66,12 +46,10 @@ layout: default
   gap: 40px;
   background: #fff;
 }
-
 .profile-sidebar {
   flex: 0 0 180px;
   min-width: 140px;
 }
-
 .profile-card {
   background: none;
   border-radius: 0;
@@ -79,11 +57,9 @@ layout: default
   box-shadow: none;
   text-align: left;
 }
-
 .profile-avatar {
   margin-bottom: 16px;
 }
-
 .avatar-image {
   width: 80px;
   height: 80px;
@@ -92,20 +68,17 @@ layout: default
   border: none;
   box-shadow: none;
 }
-
 .profile-name {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 6px 0;
   color: #222;
 }
-
 .profile-title {
   font-size: 14px;
   color: #666;
   margin: 0 0 16px 0;
 }
-
 .profile-location {
   display: flex;
   align-items: center;
@@ -114,13 +87,11 @@ layout: default
   color: #888;
   font-size: 13px;
 }
-
 .profile-links {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-
 .profile-link {
   display: flex;
   align-items: center;
@@ -133,50 +104,20 @@ layout: default
   background: none;
   transition: none;
 }
-
 .profile-link:hover {
   background: none;
   color: #007bff;
 }
-
 .profile-main {
   flex: 1;
   min-width: 0;
 }
-
-.profile-nav {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 18px;
-  padding-bottom: 0;
-  border-bottom: none;
-  overflow-x: auto;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #666;
-  padding: 0;
-  border-radius: 0;
-  font-size: 14px;
-  background: none;
-  transition: none;
-  white-space: nowrap;
-}
-
-.nav-link.active {
-  color: #222;
-  font-weight: bold;
-  background: none;
-}
-
 .profile-content {
   background: none;
   border-radius: 0;
   padding: 0;
   box-shadow: none;
 }
-
 .profile-content h1 {
   color: #222;
   border-bottom: 1px solid #eee;
@@ -184,7 +125,6 @@ layout: default
   margin-bottom: 18px;
   font-size: 22px;
 }
-
 .profile-content h2 {
   color: #222;
   margin-top: 24px;
@@ -192,47 +132,39 @@ layout: default
   font-size: 18px;
   font-weight: bold;
 }
-
 .profile-content h3 {
   color: #444;
   margin-top: 18px;
   margin-bottom: 8px;
   font-size: 15px;
 }
-
 .profile-content table {
   width: 100%;
   border-collapse: collapse;
   margin: 10px 0;
   font-size: 13px;
 }
-
 .profile-content th,
 .profile-content td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #eee;
 }
-
 .profile-content th {
   background: #fafafa;
   font-weight: 600;
 }
-
 .profile-content ul {
   padding-left: 18px;
   font-size: 13px;
 }
-
 .profile-content li {
   margin-bottom: 4px;
 }
-
 .profile-content strong {
   color: #222;
   font-weight: bold;
 }
-
 @media (max-width: 700px) {
   .profile-container {
     flex-direction: column;
