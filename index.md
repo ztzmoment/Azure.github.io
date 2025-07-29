@@ -1,6 +1,6 @@
-   ---
-   layout: default
-   title: Azure's Resume
-   ---
+---
+layout: default
+title: Azure's Resume
+---
 
-   {% include_relative about.md %}
+{% include_relative about.md %}
